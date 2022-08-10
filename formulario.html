@@ -7,9 +7,60 @@
     <title>Site Formulários</title>
 </head>
 <body>
-    <form>
-        <button type="submit" >Enviar</button>
-    </form>
     
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required="true" />
+
+        <label for="digiteasenha" >Digite sua Senha</label>
+        <input type="password" id="digiteasenha" name="senha" placeholder="Digite sua senha" maxlength="8" required="true"/>
+    <!--<input type="text" placeholder="Digite seu nome aqui" />
+    <input type="text" placeholder="Digite seu nome aqui" /> -->
+    
+        <button type="submit" >Cadastrar</button>
+    </form>
+    <hr>
+    <form>
+        <p><i>Qual o método de contato de preferência?</i></p>
+
+        <label for="email">E-mail</label>
+        <input id="email" type="radio" required name="metododecontato" value="email"/>
+        <label for="telefone">Telefone </label>
+        <input id="telefone" type="radio" required name="metododecontato" value="telefone"/>
+        <label for="whatsapp">Whatsapp </label>
+        <input id="whatsapp" type="radio" required name="metododecontato" value="whatsapp"/>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <form>
+        <label for="plano">Plano</label>
+        <Select id="plano" name="plano" required="true">
+            <option value="">
+                Escolher Plano
+            </option>
+            <option value="Premium">
+                Premium
+            </option>
+            <option value="Free">
+                Free
+            </option>
+            <option value="Pro">
+                Pro
+            </option>
+        </Select>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <hr>
+
+    <form>
+    
+        <label for="mensagem">Mensagens</label>
+        <textarea id="mensagem" placeholder="Digite sua mensagem" cols="20" rows="5" required="true"
+        ></textarea>
+        <button type="submit">Enviar mensagem</button>
+    
+    </form>
+
 </body>
 </html>
